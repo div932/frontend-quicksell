@@ -49,7 +49,7 @@ const TicketCard = ({ ticket, statusIcon, priorityIcon, userIcon }) => {
       <div className="card-top">
         <div>{ticket.id}</div>
         <div>
-          {!userIcon && <img className="user-icon" src={userIcons[ticket.userId]} style={{}}></img>}
+          {!userIcon && <img className="user-icon" src={userIcons[ticket.userId]} style={{height:"20px",width:"20px",borderRadius:"50%",objectFit:"cover",border:"1px solid #ddd"}}></img>}
           <span className="user-badge"></span>
         </div>
       </div>
